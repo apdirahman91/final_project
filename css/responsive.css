@@ -1,0 +1,104 @@
+@media (max-width: 1024px) {
+  .feature-grid,
+  .dish-grid,
+  .testimonial-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .page-grid,
+  .contact-grid,
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+
+  .hero .container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-media {
+    max-width: 560px;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .site-nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 0.8rem;
+  }
+
+  .menu-toggle-checkbox:checked ~ .site-nav {
+    display: flex;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  .feature-grid,
+  .dish-grid,
+  .testimonial-grid,
+  .gallery-grid,
+  .menu-grid,
+  .chef-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-card {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 4rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 4rem 0;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-card,
+  .feature-card,
+  .dish-bottom,
+  .testimonial-card,
+  .form-card,
+  .info-card,
+  .menu-card,
+  .gallery-card {
+    padding: 1.1rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: min(1280px, calc(100% - 3rem));
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    width: min(1400px, calc(100% - 4rem));
+  }
+}

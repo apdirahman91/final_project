@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Reserve a table at ILHAN RESTAURANT with our elegant reservation form." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation | ILHAN RESTAURANT</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html"><span class="brand-mark">IL</span><span>ILHAN RESTAURANT</span></a>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox" />
+      <label for="menu-toggle" class="menu-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="menu.html">Menu</a>
+        <a href="reservation.html" class="active">Reservation</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="nav-cta" href="reservation.html">Book a Table</a>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Reserve Your Table</p>
+          <h1>Reserve an unforgettable evening</h1>
+          <p>Whether it is a dinner for two or a family celebration, our team will ensure a beautiful experience.</p>
+        </div>
+      </section>
+
+      <section class="section container page-grid">
+        <div class="form-card">
+          <h3>Reservation Form</h3>
+          <form>
+            <div class="form-row">
+              <label>Full Name
+                <input type="text" name="name" placeholder="Your full name" required minlength="3" />
+              </label>
+              <label>Email Address
+                <input type="email" name="email" placeholder="you@example.com" required />
+              </label>
+            </div>
+            <div class="form-row">
+              <label>Phone Number
+                <input type="tel" name="phone" placeholder="+252 61 2345678" pattern="[+0-9\s()-]{7,15}" required />
+              </label>
+              <label>Reservation Date
+                <input type="date" name="date" required />
+              </label>
+            </div>
+            <div class="form-row">
+              <label>Reservation Time
+                <input type="time" name="time" required />
+              </label>
+              <label>Number of Guests
+                <input type="number" name="guests" min="1" max="12" placeholder="2" required />
+              </label>
+            </div>
+            <label>Seating Preference
+              <select name="seating" required>
+                <option value="">Select seating</option>
+                <option>Indoor Dining</option>
+                <option>Terrace</option>
+                <option>Private Room</option>
+              </select>
+            </label>
+            <label>Special Requests
+              <textarea name="requests" rows="4" placeholder="Tell us about any special requests"></textarea>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="terms" required />
+              <span>I agree to the terms and conditions for reservation bookings.</span>
+            </label>
+            <button class="btn" type="submit">Submit Reservation</button>
+          </form>
+        </div>
+        <aside class="info-card">
+          <h3>Reservation Details</h3>
+          <p>Reservations are recommended for dinner service and special occasions. We will confirm your booking by phone or email.</p>
+          <ul>
+            <li>Peak times: evenings and weekends</li>
+            <li>Minimum notice: 24 hours</li>
+            <li>Private dining available on request</li>
+          </ul>
+          <a class="btn" href="contact.html">Contact Us</a>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Call Us</h3>
+          <ul>
+            <li>+252 61 2345678</li>
+            <li>+252 90 1234567</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Opening Hours</h3>
+          <ul>
+            <li>Monday–Sunday: 10:00 AM – 11:00 PM</li>
+            <li>Friday: Closed</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Location</h3>
+          <ul>
+            <li>KM 4</li>
+            <li>Hodan</li>
+            <li>Mogadishu</li>
+            <li>Somalia</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container copyright">© 2026 ILHAN RESTAURANT. All rights reserved.</div>
+    </footer>
+  </body>
+</html>
